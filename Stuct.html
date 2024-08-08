@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інформаційна система інспектора відділу кадрів</title>
+    <link rel="stylesheet" href="dyz.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Інформаційна система інспектора відділу кадрів</h1>
+        </header>
+        <main>
+            <section id="form-section">
+                <h2>Додати нового працівника</h2>
+                <form id="employee-form">
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="position">Посада:</label>
+                    <input type="text" id="position" name="position" required>
+                    
+                    <label for="department">Відділ:</label>
+                    <input type="text" id="department" name="department" required>
+                    
+                    <button type="submit">Додати</button>
+                </form>
+            </section>
+            <section id="table-section">
+                <h2>Список працівників</h2>
+                <table id="employee-table">
+                    <thead>
+                        <tr>
+                            <th>Ім'я</th>
+                            <th>Посада</th>
+                            <th>Відділ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Дані працівників будуть додаватися тут -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
